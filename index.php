@@ -1,3 +1,7 @@
-<?php
+<?php include_once '/views/partials/header.php' ?>
 
-echo 'Hello World';
+
+<h1>This is Home page</h1>
+
+
+<?php include_once '/views/partials/footer.php' ?>
