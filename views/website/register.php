@@ -77,7 +77,7 @@ endif;
         <?php endforeach; ?>
     </div>
 <?php endif; ?>
-
+<!-- هنا يبدا شغل محمد عبد السلام -->
     <h1>This is Register Page</h1>
 
     <form action="" method="post" enctype="multipart/form-data">
@@ -91,4 +91,6 @@ endif;
         <input name="password2" type="password" placeholder="Please Re-enter your Password">
         <input type="submit">
     </form>
+<!-- هنا ينتهي شغل محمد عبد السلام -->
+
 <?php include_once '../partials/footer.php' ?>

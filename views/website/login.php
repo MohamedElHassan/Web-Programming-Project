@@ -45,6 +45,10 @@ endif;
             <?php endforeach; ?>
         </div>
     <?php endif;  ?>
+
+
+<!-- هنا يبدا شغل محمد عبد السلام -->
+
     <form action="" method="post" enctype="multipart/form-data">
         <label for="email">Email</label>
         <input value="<?php echo $email ?>" name="email" type="email" placeholder="Please Enter Your Email">
@@ -53,5 +57,6 @@ endif;
         <input type="submit">
     </form>
     <span>Don't Have an Account Yet,<a href="/views//website/register.php">Register Here</a></span>
+<!-- هنا ينتهي شغل محمد عبد السلام -->
 
 <?php include_once '../partials/footer.php' ?>
