@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: crimson;
+    font-size: 50px;
+
+}
+/* Start Header Styling */
+header {
+    background-color: #666;
+    height: 100px;
+}
+header ul {
+    padding: 40px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+header li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Start Footer Styling */
+
+footer {
+    background-color: #666;
+    height: 100px;
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+}
