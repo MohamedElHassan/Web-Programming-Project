@@ -70,27 +70,35 @@ endif;
 
 <?php include_once '../partials/header.php' ?>
 
-<?php if($errors): ?>
-    <div class="danger">
-        <?php foreach($errors as $error): ?>
-            <?php echo $error .'<br>' ?>
-        <?php endforeach; ?>
-    </div>
-<?php endif; ?>
-<!-- هنا يبدا شغل محمد عبد السلام -->
-    <h1>This is Register Page</h1>
 
-    <form action="" method="post" enctype="multipart/form-data">
-        <label for="name">Name</label>
-        <input value="<?php echo $name ?>" name="name" type="text" placeholder="Please Enter Your name">
-        <label for="email">Email</label>
-        <input value="<?php echo $email ?>" name="email" type="email" placeholder="Please Enter Your Email">
-        <label for="password">Password</label>
-        <input name="password" type="password" placeholder="Please Enter Your Password">
-        <label for="password">Re-enter your Password</label>
-        <input name="password2" type="password" placeholder="Please Re-enter your Password">
-        <input type="submit">
+<div class="register-container">
+    <?php if($errors): ?>
+        
+            <?php foreach($errors as $error): ?>
+                <div class="error-message">
+                <?php echo $error .'<br>' ?>
+                </div>
+            <?php endforeach; ?>
+        
+    <?php endif; ?>
+    <form class="register-form" action="" method="post" enctype="multipart/form-data">
+        <h3>Registration</h3>
+        <div class="cont">
+            <div class="cont1">
+                <label for="name">Name</label>
+                <input value="<?php echo $name ?>" name="name" type="text" placeholder="Please Enter Your name">
+                <label for="email">Email</label>
+                <input value="<?php echo $email ?>" name="email" type="email" placeholder="Please Enter Your Email">
+            </div>
+            <div class="cont2">
+                <label for="password">Password</label>
+                <input name="password" type="password" placeholder="Please Enter Your Password">
+                <label for="password">Re-enter your Password</label>
+                <input name="password2" type="password" placeholder="Please Re-enter your Password">
+                
+            </div>
+        </div>
+        <input class="submit-btn" type="submit" value="Register">
     </form>
-<!-- هنا ينتهي شغل محمد عبد السلام -->
-
+</div>
 <?php include_once '../partials/footer.php' ?>

@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -11,7 +12,7 @@ h1 {
 }
 /* Start Header Styling */
 header {
-    background-color: #666;
+    background-color: rgba(0, 0, 0, 0.1);
     height: 100px;
 }
 header ul {
@@ -39,17 +40,105 @@ footer {
 }
 
 
-/* Start Login Styling for محمد عبد السلام */
 
-.fdf{
-    background-color: green;
+/* Start Styling Register form */
+.register-container {
+    position: relative;
+    height: 800px;
+    background: rgb(193,112,187);
+    background: linear-gradient(309deg, rgba(193,112,187,1) 36%, rgba(0,212,255,1) 100%);
 }
 
+.register-form{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    border-radius: 6px;
+    padding: 15px 30px;
+}
+.register-form input{
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(226, 226, 226);
+    width: 240px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.register-form label{
+    text-align: left;
+    display: block;
+}
+.register-form .submit-btn {
+    background: rgb(193,112,187);
+    background: linear-gradient(309deg, rgba(193,112,187,1) 36%, rgba(0,212,255,1) 100%);    margin: 80px 0  0;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 80%;
+    font-weight: 700;
+}
+.register-form .submit-btn:hover {
+    background-color:transparent;
+    transform: scale(1.08);
+}
 
-/* End Login Styling for محمد عبد السلام */
+.register-form h3 {
+    text-align: left;
+    font-weight: 300;
+    font-size: 26px;
+    margin-bottom:10px;
+}
+.register-form .cont {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.register-container .error-message {
+    color: white;
+    background-color: rgb(182, 61, 61);
+    padding: 10px;
+    width: 80%;
+    margin: 5px auto 5px;
+    border-radius: 10px;
+}
 
+/* End Styling Register form */
 
+/* Start Styling Whatsapp Button */
 
+.whatsapp-btn {
+    z-index: 999;
+    color:white;
+    background-color:#FF5E14;
+    position:fixed;
+    font-size:50px;
+    border-radius:50%;
+    left:20px;
+    bottom:20px;
+    /* bottom: -40px; */
+    border:3px solid white;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    line-height:75px;
+    /* opacity: 0; */
+    opacity: 1;
+    transition: all 0.6s ease;
+    box-shadow: 0px 0px 15px 0 black !important;
+}
+.whatsapp-btn.show {
+    opacity: 1;
+    pointer-events: auto;
+    bottom:25px;
+}
+
+/* End Styling Whatsapp Button */
 
 
 
