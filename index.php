@@ -37,7 +37,7 @@
                     <img src="/images/illustration-features-tab-1.svg" alt="tab1">
                 </div>
                 <div class="right">
-                    <h2>Bookmark in one click</h2>
+                    <h2>Adding Products</h2>
                     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde recusandae architecto reiciendis hic quaerat earum obcaecati, ea dolor? Eum!</p>
                     <a href="">More Info</a>
                 </div>
