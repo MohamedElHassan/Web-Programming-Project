@@ -28,8 +28,8 @@
         <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, optio qui? Suscipit sequi numquam natus.</p>
         <ul class="menu-btns">
             <li data-clickedtab="1">Adding Products</li>
-            <li class="active" data-clickedtab="2">Speedy Searching</li>
-            <li data-clickedtab="3">Easy Sharing</li>
+            <li class="active" data-clickedtab="2">Editing Products</li>
+            <li data-clickedtab="3">Deleting Products</li>
         </ul>
         <div data-contentnum="1" class="content">
             <div class="column">
