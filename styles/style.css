@@ -5,10 +5,6 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-body {
-    height: 3000px;
-}
-
 h1 {
     color: crimson;
     font-size: 50px;
@@ -77,11 +73,12 @@ header li a:hover{
 /* Start Footer Styling */
 
 footer {
-    background-color: #666;
+    background-color: #242946;
     height: 100px;
     text-align: center;
     padding: 0 40px;
     color: #fff;
+    line-height: 100px;
 }
 
 
@@ -198,7 +195,7 @@ footer {
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s;
-    width: 80%;
+    width: 100%;
     font-weight: 700;
 }
 .login-form .submit-btn:hover {
