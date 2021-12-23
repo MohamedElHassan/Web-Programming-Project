@@ -1,0 +1,66 @@
+/* General Settings */
+.container {
+    padding: 0 150px;
+}
+/* First Section (Home) Styling */
+
+.home .container {
+    margin: 120px 0;
+}
+.home .column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home .column .right h1{
+    color:#242948;
+    font-size: 45px;
+    font-weight:600;
+    margin-bottom: 10px;
+}
+.home .column .right .text {
+    margin-bottom: 10px;
+}
+.home .column .right .btns button:first-of-type{
+    padding: 10px 0;
+    font-size: 17px;
+    border:none;
+    box-shadow: 0px 17px 24px -6px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 17px 24px -6px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 17px 24px -6px rgba(0,0,0,0.24);
+    width: 180px;
+    height: 60px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #5267DE;
+    border:2px solid #5267DE;
+    margin-right:15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.home .column .right .btns button:last-of-type{
+    box-shadow: 0px 17px 24px -6px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 17px 24px -6px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 17px 24px -6px rgba(0,0,0,0.24);
+    font-size: 17px;
+    border:none;
+    box-shadow: 1;
+    width: 160px;
+    height: 60px;
+    border-radius: 8px;
+    color: #67686D;
+    background-color: #F7F7F7;
+    /* border:0px solid #c3c3c3; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.home .column .right .btns button:first-of-type:hover {
+    background-color: transparent;
+    color:#5267DE;
+}
+.home .column .right .btns button:last-of-type:hover {
+    background-color: transparent;
+    color: #67686D;
+    border:3px solid #c3c3c3;
+
+}
