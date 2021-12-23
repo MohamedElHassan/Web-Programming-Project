@@ -4,11 +4,16 @@ require_once '../../functions.php';
 $errors = [];
 $email = $_POST['email'] ?? null;
 $password = $_POST['password'] ?? null;
-
 // echo '<pre>';
 // var_dump($_POST);
 // echo '</pre>';
 // echo '<hr>';
+if(!$email){
+    $errors[] = 'Please Enter Your Email';
+}
+if(!$password){
+    $errors[] = 'Please Enter Your Password';
+}
 if($_SERVER['REQUEST_METHOD'] === 'POST'):
 if(empty($errors)):
 $statement = $pdo->prepare('SELECT * FROM register WHERE email = :email');
@@ -36,27 +41,22 @@ endif;
 
 <?php include_once '../partials/header.php' ?>
 
-    <h1>This is Login Page</h1>
-
+<div class="login-container">
     <?php if($errors): ?>
-        <div class="danger">
-            <?php foreach($errors as $error): ?>
-                <?php echo $error; ?>
-            <?php endforeach; ?>
-        </div>
-    <?php endif;  ?>
-
-
-<!-- هنا يبدا شغل محمد عبد السلام -->
-
-    <form action="" method="post" enctype="multipart/form-data">
+            <div class="error-message">
+                <?php foreach($errors as $error): ?>
+                    <?php echo $error .'<br>'; ?>
+                <?php endforeach; ?>
+            </div>
+        <?php endif;  ?>
+    <form class="login-form" action="" method="post" enctype="multipart/form-data">
+        <h3>Login</h3>
         <label for="email">Email</label>
         <input value="<?php echo $email ?>" name="email" type="email" placeholder="Please Enter Your Email">
         <label for="password">Password</label>
         <input name="password" type="password" placeholder="Please Enter Your Password">
-        <input type="submit">
+        <span>Don't Have an Account Yet, <a href="/views//website/register.php">Register Here</a></span>
+        <input class="submit-btn" type="submit" value="Submit">
     </form>
-    <span>Don't Have an Account Yet,<a href="/views//website/register.php">Register Here</a></span>
-<!-- هنا ينتهي شغل محمد عبد السلام -->
-
+</div>
 <?php include_once '../partials/footer.php' ?>
