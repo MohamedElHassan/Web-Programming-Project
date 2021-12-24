@@ -20,7 +20,14 @@ $statement = $pdo->prepare('SELECT * FROM register WHERE email = :email');
 $statement->bindValue(':email',$email);
 $statement->execute();
 $data = $statement->fetchAll(PDO::FETCH_ASSOC) ?? null;
-
+echo '<pre>';
+var_dump($data);
+echo '</pre>';
+echo '<hr>';
+if(empty($data)){
+    $errors[] = 'This Email is not Registered';
+    header("Location:/views/website/login.php");
+}
 $theData = $data[0];
 
 // echo '<pre>';

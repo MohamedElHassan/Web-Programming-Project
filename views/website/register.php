@@ -11,9 +11,6 @@ require_once '../../functions.php';
 // echo '</pre>';
 // echo '<hr>';
 
-
-
-
 $errors = [];
 $name = '';
 $email = '';

@@ -69,8 +69,10 @@
         </div>
     </div>
 </section>
+<!-- Don't forget to use SSI tech -->
+<!-- #include file name  -->
 
-
+<?php include_once 'views/website/section3.php' ?>
 
 <a class="whatsapp-btn" target="_blank" href="https://api.whatsapp.com/send?phone=+201557817439"><i class="fab fa-whatsapp"></i></a>
 
