@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/home-page.css">
+    <link rel="stylesheet" href="/styles/all.min.css">
     <title>Web Project</title>
 </head>
 

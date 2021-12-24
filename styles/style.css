@@ -1,5 +1,5 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -8,7 +8,6 @@
 h1 {
     color: crimson;
     font-size: 50px;
-
 }
 /* Start Header Styling */
 header {
@@ -33,37 +32,37 @@ header ul {
 header li {
     padding: 15px 40px;
 }
-header li a{
+header li a {
     text-align: center;
     text-decoration: none;
-    color: #35333E;
+    color: #35333e;
     font-size: 18px;
     transition: all 0.3s ease;
 }
-header li a:hover{
-    color: #FB5859;
+header li a:hover {
+    color: #fb5859;
 }
 .header-btn {
     text-decoration: none;
     line-height: 55px;
     text-align: center;
     font-size: 17px;
-    border:none;
-    box-shadow: 0px 17px 24px -6px rgba(0,0,0,0.24);
-    -webkit-box-shadow: 0px 17px 24px -6px rgba(0,0,0,0.24);
-    -moz-box-shadow: 0px 17px 24px -6px rgba(0,0,0,0.24);
+    border: none;
+    box-shadow: 0px 17px 24px -6px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 0px 17px 24px -6px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 17px 24px -6px rgba(0, 0, 0, 0.24);
     width: 140px;
     height: 60px;
     border-radius: 8px;
     color: #fff;
-    background-color: #FB5859;
-    border:2px solid #FB5859;
+    background-color: #fb5859;
+    border: 2px solid #fb5859;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .header-btn:hover {
     background-color: transparent;
-    color:#FB5859;
+    color: #fb5859;
 }
 .header-img {
     margin: 0 0 0 150px;
@@ -81,22 +80,24 @@ footer {
     line-height: 100px;
 }
 
-
-
 /* Start Styling Register form */
 .register-container {
-    padding:20px 0;
+    padding: 20px 0;
     position: relative;
     height: 800px;
-    background: rgb(193,112,187);
-    background: linear-gradient(309deg, rgba(193,112,187,1) 36%, rgba(0,212,255,1) 100%);
+    background: rgb(193, 112, 187);
+    background: linear-gradient(
+        309deg,
+        rgba(193, 112, 187, 1) 36%,
+        rgba(0, 212, 255, 1) 100%
+    );
 }
 
-.register-form{
+.register-form {
     position: absolute;
     top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #fff;
     width: 600px;
     text-align: center;
@@ -104,7 +105,7 @@ footer {
     border-radius: 6px;
     padding: 15px 30px;
 }
-.register-form input{
+.register-form input {
     padding: 10px;
     border-radius: 3px;
     border: 1px solid rgb(226, 226, 226);
@@ -112,13 +113,18 @@ footer {
     height: 40px;
     margin-bottom: 10px;
 }
-.register-form label{
+.register-form label {
     text-align: left;
     display: block;
 }
 .register-form .submit-btn {
-    background: rgb(193,112,187);
-    background: linear-gradient(309deg, rgba(193,112,187,1) 36%, rgba(0,212,255,1) 100%);    margin: 80px 0  0;
+    background: rgb(193, 112, 187);
+    background: linear-gradient(
+        309deg,
+        rgba(193, 112, 187, 1) 36%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    margin: 80px 0 0;
     color: white;
     border-radius: 6px;
     cursor: pointer;
@@ -127,7 +133,7 @@ footer {
     font-weight: 700;
 }
 .register-form .submit-btn:hover {
-    background-color:transparent;
+    background-color: transparent;
     transform: scale(1.08);
 }
 
@@ -135,12 +141,12 @@ footer {
     text-align: left;
     font-weight: 300;
     font-size: 26px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 .register-form .cont {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 .register-container .error-message {
     color: white;
@@ -155,42 +161,51 @@ footer {
 
 /* Start Styling Login form */
 .login-container {
-    padding:20px 0;
+    padding: 20px 0;
     position: relative;
     height: 800px;
-    background: rgb(193,112,187);
-    background: linear-gradient(309deg, rgba(193,112,187,1) 36%, rgba(0,212,255,1) 100%);
+    background: rgb(193, 112, 187);
+    background: linear-gradient(
+        309deg,
+        rgba(193, 112, 187, 1) 36%,
+        rgba(0, 212, 255, 1) 100%
+    );
 }
-.login-form{
+.login-form {
     position: absolute;
     top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #fff;
-    
+
     text-align: center;
     margin: 0 auto;
     border-radius: 6px;
     padding: 15px 30px;
 }
-.login-form input{
+.login-form input {
     display: block;
     padding: 10px;
     border-radius: 3px;
     border: 1px solid rgb(226, 226, 226);
-    width:100%;
+    width: 100%;
     height: 40px;
     margin-bottom: 10px;
     margin: 0 auto;
 }
-.login-form label{
+.login-form label {
     margin: 0 auto;
     text-align: left;
     display: block;
 }
 .login-form .submit-btn {
-    background: rgb(193,112,187);
-    background: linear-gradient(309deg, rgba(193,112,187,1) 36%, rgba(0,212,255,1) 100%);    margin: 80px 0  0;
+    background: rgb(193, 112, 187);
+    background: linear-gradient(
+        309deg,
+        rgba(193, 112, 187, 1) 36%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    margin: 80px 0 0;
     color: white;
     border-radius: 6px;
     cursor: pointer;
@@ -199,7 +214,7 @@ footer {
     font-weight: 700;
 }
 .login-form .submit-btn:hover {
-    background-color:transparent;
+    background-color: transparent;
     transform: scale(1.08);
 }
 
@@ -207,7 +222,7 @@ footer {
     text-align: left;
     font-weight: 300;
     font-size: 26px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 .login-container .error-message {
     color: white;
@@ -220,23 +235,22 @@ footer {
 
 /* End Styling Login form */
 
-
 /* Start Styling Whatsapp Button */
 
 .whatsapp-btn {
     z-index: 999;
-    color:white;
-    background-color:#FB5859;
-    position:fixed;
-    font-size:50px;
-    border-radius:50%;
-    left:20px;
+    color: white;
+    background-color: #fb5859;
+    position: fixed;
+    font-size: 50px;
+    border-radius: 50%;
+    left: 20px;
     bottom: -40px;
-    border:3px solid white;
+    border: 3px solid white;
     text-align: center;
     width: 80px;
     height: 80px;
-    line-height:75px;
+    line-height: 75px;
     opacity: 0;
     transition: all 0.6s ease;
     box-shadow: 0px 0px 15px 0 black !important;
@@ -244,24 +258,166 @@ footer {
 .whatsapp-btn.show {
     opacity: 1;
     pointer-events: auto;
-    bottom:25px;
-    
+    bottom: 25px;
 }
 .whatsapp-btn:hover {
     transform: scale(1.1);
-} 
-.whatsapp-btn:hover i{
+}
+.whatsapp-btn:hover i {
     transition: color 0.3s ease-in-out;
-    color: #35333E;
-} 
+    color: #35333e;
+}
 
 /* End Styling Whatsapp Button */
 
-
-
 /* Start Contact Page Styling for خميس صديقي🌹❤️ */
+.contact-container {
+    height: 800px;
+}
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+}
+.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+/* خطأ❌❌❌ */
 
+/* body {
+    background: linear-gradient(
+        309deg,
+        rgba(193, 112, 187, 1) 36%,
+        rgba(0, 212, 255, 1) 100%
+    );
+} */
 
+.contact-container {
+    width: 1000px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.contact-container h2 {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.contact-container form {
+    margin: 35px 30px;
+}
+form .dbl-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.dbl-field .field {
+    height: 50px;
+    position: relative;
+    width: calc(100% / 2 -13px);
+}
+form .field input,
+form .message textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+}
+
+form .field input::placeholder,
+form .message textarea::placeholder {
+    color: #bfbfbf;
+}
+form .field input:focus,
+form .message textarea:focus {
+    border: 2px solid #0d6efd;
+}
+/*  
+  .contact-container form i{
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      color: #bfbfbf;
+      font-size: 17px;
+      pointer-events: none;
+      transform: translateY(-50%);
+  }
+   
+  form .field input:focus ~ i{
+      color: #0D6EFD;
+  }
+  form .message{
+      position: relative;
+  }
+  form .message i{
+      top: 30px;
+      font-size: 20px;
+  }
+  form .message textarea{
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 120px;
+      max-height: 300px;
+      padding: 15px 20px 0 48px;
+  }
+  form .button-area{
+      margin: 25px 0;
+      display: flex;
+      align-items: center;
+  }
+   
+  .button-area button{
+      font-size: 18px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+      background: #0D6EFD;
+      padding: 13px 25px;
+  } 
+   */
+.button-area span {
+    color: #0d6efd;
+    margin-left: 30px;
+}
+
+@media (max-width: 600px) {
+    .contact-container h2 {
+        text-align: center;
+    }
+    form .dbl-field {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .dbl-field .field {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .button-area button {
+        width: 100%;
+    }
+    form .message textarea {
+        resize: none;
+    }
+    form .button-area {
+        flex-direction: column;
+    }
+    .button-area button {
+        width: 100%;
+    }
+    .button-area span {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
 /* End Contact Page Styling for ❤️🌹خميس صديقي */
-
