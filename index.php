@@ -8,7 +8,7 @@
     <div class="container">
         <div class="column">
             <div class="right">
-                <h1>Inventory Management System</h1>
+                <h1>Product Management System</h1>
                 <p class="text">A clean and simple interface to organize your Products. Add, Delete, Edit Your Products,  Try it for free.</p>
                 <div class="btns">
                     <button>Try It for Free</button>

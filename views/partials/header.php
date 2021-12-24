@@ -23,6 +23,7 @@
             <li><a href="/index.php">Home</a></li>
             <li><a href="/views/website/contact.php">Contact Us</a></li>
             <li><a href="/views/website/login.php">Login</a></li>
+            <li><a href="/ProductApp/public/products/index.php">Product App</a></li>
             <a href="/views/website/register.php" class="header-btn">Register</a>
         </ul>
     </header>
