@@ -273,6 +273,12 @@ footer {
 /* Start Contact Page Styling for خميس صديقي🌹❤️ */
 .contact-container {
     height: 800px;
+    background: rgb(193, 112, 187);
+    background: linear-gradient(
+        309deg,
+        rgba(193, 112, 187, 1) 36%,
+        rgba(0, 212, 255, 1) 100%
+    );
 }
 form {
     position: absolute;

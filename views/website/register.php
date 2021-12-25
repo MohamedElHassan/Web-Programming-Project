@@ -48,7 +48,7 @@ if(empty($errors)){
     
     $redirect = 'Thank you for Regestration';
 $statement =  $pdo->prepare("INSERT INTO register (name, email, password, join_date)
-                VALUES (:name,:email , :password, :date)
+                VALUES (:name, :email, :password, :date)
 ");
 $statement->bindValue(':name',$name);
 $statement->bindValue(':email',$email);

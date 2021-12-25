@@ -8,13 +8,14 @@ $password = $_POST['password'] ?? null;
 // var_dump($_POST);
 // echo '</pre>';
 // echo '<hr>';
-if(!$email){
-    $errors[] = 'Please Enter Your Email';
-}
-if(!$password){
-    $errors[] = 'Please Enter Your Password';
-}
+
 if($_SERVER['REQUEST_METHOD'] === 'POST'):
+    if(!$email){
+        $errors[] = 'Please Enter Your Email';
+    }
+    if(!$password){
+        $errors[] = 'Please Enter Your Password';
+    }
 if(empty($errors)):
 $statement = $pdo->prepare('SELECT * FROM register WHERE email = :email');
 $statement->bindValue(':email',$email);

@@ -11,8 +11,8 @@
                 <h1>Product Management System</h1>
                 <p class="text">A clean and simple interface to organize your Products. Add, Delete, Edit Your Products,  Try it for free.</p>
                 <div class="btns">
-                    <button>Try It for Free</button>
-                    <button>Contact Us now</button>
+                    <a href="/ProductApp/public/products/index.php">Try It for Free</a>
+                    <a href="/views/website/contact.php">Contact Us now</a>
                 </div>
             </div>
             <div class="left">
