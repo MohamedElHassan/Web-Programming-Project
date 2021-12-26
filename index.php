@@ -76,6 +76,11 @@
 <!-- Don't forget to use SSI tech -->
 
 <!-- #include file name  -->
+<section class="contact">
+    <div class="container">
+        
+    </div>
+</section>
 
 <a class="whatsapp-btn" target="_blank" href="https://api.whatsapp.com/send?phone=+201557817439"><i class="fab fa-whatsapp"></i></a>
 

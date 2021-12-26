@@ -7,7 +7,6 @@ $phone = $_POST['phone'] ?? '';
 $website = $_POST['website'] ?? '';
 $message = $_POST['message'] ?? null;
 
-
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     if(!$name){
         $errors[] = 'Please Enter Your Name';
@@ -39,23 +38,7 @@ header("Location: /index.php?redirect=$redirect");
 <?php include_once '../partials/header.php' ?>
 <!-- هنا يبدا شغل ميسو حبيب قلبي❤️🌹😘 -->
 
-<!--
 
-<form method="post" action="">
-    <label for="name">Name</label>
-    <input class="name" type="text" name="name" placeholder="Please Enter your name">
-    <label for="email">Email</label>
-    <input name="email" type="email" value="@gmail.com" placeholder="Enter your Email">
-    <label for="mobile-phone">Phone Number</label>
-    <input type="number" name="mobile" placeholder="Enter your mobile number">
-    <label for="message">Message</label>
-    <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-    <input type="submit" value="Send Us Message">
-    
-</form>
--->
-
-<!-- هنا ينتهي شغل ميسو حبيب قلبي❤️🌹😘 -->
 <div class="contact-container">
     <?php if($errors): ?>
             <?php foreach($errors as $error): ?>
@@ -75,18 +58,18 @@ header("Location: /index.php?redirect=$redirect");
             </div>
             <div class="field">
                 <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Enter your eamil" name="email">
+                <input type="email" placeholder="Enter your eamil" name="email">
                 
             </div>
         </div>
         <div class="db-field">
             <div class="field">
                 <i class="fas fa-phone-alt"></i>
-                <input type="text" placeholder="Enter your phone" name="phone">
+                <input type="text" placeholder="Enter your phone - 'Optional'" name="phone">
             </div>
             <div class="field">
                 <i class="fas fa-globe"></i>
-                <input type="text" placeholder="Enter your website" name="website">
+                <input type="text" placeholder="Enter your website - 'Optional'" name="website">
                 
             </div>
         </div>
@@ -97,8 +80,8 @@ header("Location: /index.php?redirect=$redirect");
         </div>
         <div class="button-area">
             <button type="submit" class="submit-btn">Send Message</button>
-            <!-- <span>Sending your message...<span> -->
         </div>
     </form> 
 </div>
+<!-- هنا ينتهي شغل ميسو حبيب قلبي❤️🌹😘 -->
 <?php include_once '../partials/footer.php' ?>

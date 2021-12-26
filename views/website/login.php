@@ -4,10 +4,6 @@ require_once '../../functions.php';
 $errors = [];
 $email = $_POST['email'] ?? null;
 $password = $_POST['password'] ?? null;
-// echo '<pre>';
-// var_dump($_POST);
-// echo '</pre>';
-// echo '<hr>';
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'):
     if(!$email){
@@ -21,20 +17,11 @@ $statement = $pdo->prepare('SELECT * FROM register WHERE email = :email');
 $statement->bindValue(':email',$email);
 $statement->execute();
 $data = $statement->fetchAll(PDO::FETCH_ASSOC) ?? null;
-echo '<pre>';
-var_dump($data);
-echo '</pre>';
-echo '<hr>';
 if(empty($data)){
     $errors[] = 'This Email is not Registered';
     header("Location:/views/website/login.php");
 }
 $theData = $data[0];
-
-// echo '<pre>';
-// var_dump($data);
-// echo '</pre>';
-// echo '<hr>';
 
 if($theData['password'] === $password){
     $redirect = "Welcome Back, ". $theData['name'];

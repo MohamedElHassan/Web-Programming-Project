@@ -2,14 +2,6 @@
 
 require_once '../../database.php';
 require_once '../../functions.php';
-// echo '<pre>';
-// var_dump($_FILES);
-// echo '</pre>';
-// echo '<hr>';
-// echo '<pre>';
-// var_dump($_POST);
-// echo '</pre>';
-// echo '<hr>';
 
 $errors = [];
 $name = '';
@@ -24,21 +16,8 @@ $statement = $pdo->prepare('SELECT * FROM register WHERE email = :email');
 $statement->bindValue(':email',$email);
 $statement->execute();
 $data = $statement->fetchAll(PDO::FETCH_ASSOC) ?? 0;
-// echo '<pre>';
-// var_dump($data);
-// echo '</pre>';
-// echo '<hr>';
 $theData = $data[0] ?? 0;
 $emailExists = $theData['email'] ?? 0;
-// echo '<pre>';
-// var_dump($data[0]);
-// echo '</pre>';
-// echo '<hr>';
-// echo '<pre>';
-// var_dump($theData['email']);
-// echo '</pre>';
-// echo '<hr>';
-
 
 
 if($emailExists == 0){
