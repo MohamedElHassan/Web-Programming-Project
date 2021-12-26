@@ -37,8 +37,6 @@ header("Location: /index.php?redirect=$redirect");
 
 
 <?php include_once '../partials/header.php' ?>
-
-    <h1>This is Contact Page</h1>
 <!-- هنا يبدا شغل ميسو حبيب قلبي❤️🌹😘 -->
 
 <!--
@@ -60,7 +58,6 @@ header("Location: /index.php?redirect=$redirect");
 <!-- هنا ينتهي شغل ميسو حبيب قلبي❤️🌹😘 -->
 <div class="contact-container">
     <?php if($errors): ?>
-            
             <?php foreach($errors as $error): ?>
                 <div class="error-message">
                 <?php echo $error .'<br>' ?>
@@ -69,8 +66,8 @@ header("Location: /index.php?redirect=$redirect");
         
     <?php endif; ?>
 
-    <h2>Send us a Message</h2>
     <form action="" method="post">
+        <h2>Send us a Message</h2>
         <div class="db-field">
             <div class="field">
                 <i class="fas fa-user"></i>
@@ -96,11 +93,11 @@ header("Location: /index.php?redirect=$redirect");
         <div class="message">
             <i class="fas fa-envelope-square"></i>
             <textarea placeholder="Write your message" name="message"></textarea>
-            <i class="material-icons">message</i>
+            
         </div>
         <div class="button-area">
-            <button type="submit">Send Message</button>
-            <span>Sending your message...<span>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <!-- <span>Sending your message...<span> -->
         </div>
     </form> 
 </div>

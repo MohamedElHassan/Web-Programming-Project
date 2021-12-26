@@ -1,7 +1,11 @@
 <?php include_once 'views/partials/header.php' ?>
+
+
+
 <?php if(isset($_GET['redirect'])): ?>
-            <?php echo $_GET['redirect'] ?>
-        
+    <div class="welcome-message">
+        <?php echo $_GET['redirect'] ?>
+    </div>
 <?php endif; ?>
 
 <section class="home" id="home">
@@ -70,9 +74,8 @@
     </div>
 </section>
 <!-- Don't forget to use SSI tech -->
-<!-- #include file name  -->
 
-<?php include_once 'views/website/section3.php' ?>
+<!-- #include file name  -->
 
 <a class="whatsapp-btn" target="_blank" href="https://api.whatsapp.com/send?phone=+201557817439"><i class="fab fa-whatsapp"></i></a>
 

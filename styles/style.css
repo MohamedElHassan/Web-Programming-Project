@@ -148,15 +148,6 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
-.register-container .error-message {
-    color: white;
-    background-color: rgb(182, 61, 61);
-    padding: 10px;
-    width: 80%;
-    margin: 5px auto 5px;
-    border-radius: 10px;
-}
-
 /* End Styling Register form */
 
 /* Start Styling Login form */
@@ -224,7 +215,8 @@ footer {
     font-size: 26px;
     margin-bottom: 10px;
 }
-.login-container .error-message {
+/* Shared */
+.error-message {
     color: white;
     background-color: rgb(182, 61, 61);
     padding: 10px;
@@ -232,6 +224,13 @@ footer {
     margin: 5px auto 5px;
     border-radius: 10px;
 }
+
+
+.login-form input:focus,
+.register-form input:focus{
+    border: 2px solid #0d6efd;
+}
+
 
 /* End Styling Login form */
 
@@ -272,7 +271,8 @@ footer {
 
 /* Start Contact Page Styling for خميس صديقي🌹❤️ */
 .contact-container {
-    height: 800px;
+    position: relative;
+    height: 1000px;
     background: rgb(193, 112, 187);
     background: linear-gradient(
         309deg,
@@ -303,20 +303,17 @@ form {
     );
 } */
 
-.contact-container {
-    width: 1000px;
-    background: #fff;
-    border-radius: 5px;
-}
+
 
 .contact-container h2 {
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 20px 30px;
-    border-bottom: 1px solid #bfbfbf;
 }
 .contact-container form {
-    margin: 35px 30px;
+    /* margin: 35px 30px; */
+    padding: 60px;
+    border-radius: 8px;
 }
 form .dbl-field {
     display: flex;
@@ -331,15 +328,25 @@ form .dbl-field {
 }
 form .field input,
 form .message textarea {
-    height: 100%;
-    width: 100%;
+    margin-left:5px;
+    height: 30px;
+    width: 400px;
     outline: none;
-    padding: 0 18px 0 48px;
+    padding: 11px 18px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 4px;
     border: 1px solid #bfbfbf;
+    margin-bottom: 10px;
 }
-
+form .message textarea {
+    width: 400px;
+    height: 120px;
+}
+form .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 form .field input::placeholder,
 form .message textarea::placeholder {
     color: #bfbfbf;
@@ -348,82 +355,31 @@ form .field input:focus,
 form .message textarea:focus {
     border: 2px solid #0d6efd;
 }
-/*  
-  .contact-container form i{
-      position: absolute;
-      left: 18px;
-      top: 50%;
-      color: #bfbfbf;
-      font-size: 17px;
-      pointer-events: none;
-      transform: translateY(-50%);
-  }
-   
-  form .field input:focus ~ i{
-      color: #0D6EFD;
-  }
-  form .message{
-      position: relative;
-  }
-  form .message i{
-      top: 30px;
-      font-size: 20px;
-  }
-  form .message textarea{
-      min-width: 100%;
-      max-width: 100%;
-      min-height: 120px;
-      max-height: 300px;
-      padding: 15px 20px 0 48px;
-  }
-  form .button-area{
-      margin: 25px 0;
-      display: flex;
-      align-items: center;
-  }
-   
-  .button-area button{
-      font-size: 18px;
-      border: none;
-      color: #fff;
-      cursor: pointer;
-      border-radius: 5px;
-      background: #0D6EFD;
-      padding: 13px 25px;
-  } 
-   */
+
+
 .button-area span {
     color: #0d6efd;
     margin-left: 30px;
 }
-
-@media (max-width: 600px) {
-    .contact-container h2 {
-        text-align: center;
-    }
-    form .dbl-field {
-        flex-direction: column;
-        margin-bottom: 0px;
-    }
-    .dbl-field .field {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .button-area button {
-        width: 100%;
-    }
-    form .message textarea {
-        resize: none;
-    }
-    form .button-area {
-        flex-direction: column;
-    }
-    .button-area button {
-        width: 100%;
-    }
-    .button-area span {
-        text-align: center;
-        margin: 20px 0;
-    }
+form .submit-btn {
+    background: rgb(193, 112, 187);
+    background: linear-gradient(
+        309deg,
+        rgba(193, 112, 187, 1) 36%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    margin: 30px 0 0;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    font-weight: 700;
+    border: none;
+    height: 40px;
+}
+form .submit-btn:hover {
+    background-color: transparent;
+    transform: scale(1.08);
 }
 /* End Contact Page Styling for ❤️🌹خميس صديقي */
